@@ -13,30 +13,9 @@ class Preparation extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'description'
+        'description',
     ];
 
-    protected $guarded = [];
-
-    
-	/**
-	 * @return mixed
-	 */
-	public function getDescription() {
-		return $this->description;
-	}
-
-
-    
-	/**
-	 * @param $value
-	 * @return $this
-	 */
-	public function setDescription($value) {
-		$this->description = $value;
-		return $this;
-	}
-
-
+    // Removed guarded, getDescription, setDescription for Laravel 11 conventions
 
 }

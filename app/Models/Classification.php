@@ -13,30 +13,13 @@ class Classification extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'name'
+        'name',
     ];
 
-    protected $guarded = [];
+    // Removed guarded, getName, setName for Laravel 11 conventions
 
-    
-	/**
-	 * @return mixed
-	 */
-	public function getName() {
-		return $this->name;
-	}
-
-
-    
-	/**
-	 * @param $value
-	 * @return $this
-	 */
-	public function setName($value) {
-		$this->name = $value;
-		return $this;
-	}
-
-
-
+    public function recipes()
+    {
+        return $this->hasMany(Recipe::class);
+    }
 }

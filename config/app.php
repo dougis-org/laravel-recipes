@@ -134,8 +134,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Illuminate\Html\HtmlServiceProvider::class,
-        Sofa\Eloquence\ServiceProvider::class,
+    // Illuminate\Html\HtmlServiceProvider::class, // removed for Laravel 11
+    // Sofa\Eloquence\ServiceProvider::class, // removed for Laravel 11
+
+        // Illuminate\Html\HtmlServiceProvider::class, // removed for Laravel 11
+        // Sofa\Eloquence\ServiceProvider::class, // removed for Laravel 11
 
         /*
          * Application Service Providers...
@@ -144,11 +147,15 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
-        // Use the line below for "laravelcollective/html" package otherwise remove it.
-        Collective\Html\HtmlServiceProvider::class,
-        Way\Generators\GeneratorsServiceProvider::class,
-        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+    // Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class, // removed for Laravel 11
+    // Collective\Html\HtmlServiceProvider::class, // removed for Laravel 11
+    // Way\Generators\GeneratorsServiceProvider::class, // removed for Laravel 11
+    // Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class, // removed for Laravel 11
+
+        // Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class, // removed for Laravel 11
+        // Collective\Html\HtmlServiceProvider::class, // removed for Laravel 11
+        // Way\Generators\GeneratorsServiceProvider::class, // removed for Laravel 11
+        // Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class, // removed for Laravel 11
 
     ],
 

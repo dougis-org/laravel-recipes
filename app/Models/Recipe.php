@@ -27,13 +27,14 @@ class Recipe extends Model
         'cholesterol',
         'sodium',
         'protein',
-        'marked'
+        'marked',
+        'description',
     ];
 
-    protected $guarded = [];
+    // Removed guarded for Laravel 11 conventions
 
-	// no need for this, but you can define default searchable columns:
-	protected $searchableColumns = ['name', 'ingredients'];
+    // no need for this, but you can define default searchable columns:
+    protected $searchableColumns = ['name', 'ingredients'];
 	/**
 	 * @return mixed
 	 */

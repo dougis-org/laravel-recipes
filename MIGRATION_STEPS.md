@@ -83,6 +83,15 @@ This document outlines the remaining steps and patterns to follow for a consiste
 
 ---
 
+## Workflow for All Migration Phases
+
+1. **Create a new branch** for your migration work (e.g., `laravel11-middleware`, `laravel11-config`, etc.).
+2. **Perform the migration** following the steps and patterns in this document.
+3. **Commit and push** your changes to the branch.
+4. **Open a pull request (PR)** to `main` for review.
+5. **Merge the PR** after review and validation.
+6. **Repeat** for each migration phase or area.
+
 ## How to Use This Guide
 
 - For any new migration thread, reference this file to ensure consistency.

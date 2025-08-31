@@ -13,10 +13,10 @@ class Meal extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'name'
+        'name',
     ];
 
-    protected $guarded = [];
+    // Removed guarded for Laravel 11 conventions
 
     
 	/**

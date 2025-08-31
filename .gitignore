@@ -5,3 +5,7 @@ Homestead.json
 .env
 /composer.lock
 /*.env
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md

@@ -2,18 +2,8 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | PDO Fetch Style
-    |--------------------------------------------------------------------------
-    |
-    | By default, database results will be returned as instances of the PHP
-    | stdClass object; however, you may desire to retrieve records in an
-    | array format for simplicity. Here you can tweak the fetch style.
-    |
-    */
 
-    'fetch' => PDO::FETCH_CLASS,
+    // 'fetch' key removed in Laravel 11
 
     /*
     |--------------------------------------------------------------------------
@@ -66,10 +56,10 @@ return [
 
         'model' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'database'  => 'recipe_data_test',
-            'username'  => 'root',
-            'password'  => 'upper42LOWER',
+            'host'      => env('MODEL_DB_HOST', 'localhost'),
+            'database'  => env('MODEL_DB_DATABASE', 'recipe_data_test'),
+            'username'  => env('MODEL_DB_USERNAME', 'root'),
+            'password'  => env('MODEL_DB_PASSWORD'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

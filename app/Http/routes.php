@@ -1,2 +1,2 @@
 <?php
-// Legacy routes moved to routes/web.php for Laravel 11 upgrade.
+// File removed for Laravel 11 migration. All routes are now in routes/web.php and routes/api.php

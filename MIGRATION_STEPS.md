@@ -45,12 +45,24 @@ This document outlines the remaining steps and patterns to follow for a consiste
   - Use Laravel 11's `Handler.php` conventions.
   - Remove deprecated methods.
 
-## 6. Config & Service Provider Updates
+## 6. Config & Service Provider Updates (IN PROGRESS)
 
 - **Pattern:**
+
   - Remove obsolete providers from `config/app.php`.
   - Use FQCN for all providers and aliases.
   - Update config files for new Laravel 11 options.
+
+- **Status:**
+
+  - Manual edits detected in `config/app.php`, `composer.json`, and several provider files. Review and modernization for Laravel 11 is in progress on branch `laravel11-config`.
+  - All config files have been read and are being updated for compatibility.
+
+- **Next Steps:**
+  1. Complete review and modernization of all config files for Laravel 11 compatibility, ensuring no manual edits are lost.
+  2. Commit, push, and open a PR to `main` from `laravel11-config`.
+  3. Merge PR after review.
+  4. Proceed to **Testing & Validation** (Step 7 below) in a new branch.
 
 ## 7. Testing & Validation
 
@@ -100,4 +112,4 @@ This document outlines the remaining steps and patterns to follow for a consiste
 
 ---
 
-_Last updated: August 31, 2025_
+### Last updated: August 31, 2025
